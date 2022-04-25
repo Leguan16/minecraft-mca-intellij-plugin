@@ -3,7 +3,6 @@ package at.noahb.minecraftmcaintellijplugin.nbt;
 import com.github.tth05.minecraftnbtintellijplugin.NBTTagTreeNode;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import me.ratsiel.nbt.NBTInputStream;
 import me.ratsiel.nbt.NBTOutputStream;
 import me.ratsiel.nbt.model.CompoundTag;
 
@@ -33,6 +32,7 @@ public class McaNBTFactory {
 
     /**
      * Load root {@link CompoundTag} from {@link InputStream}
+     *
      * @param inputStream given {@link InputStream}
      * @return {@link CompoundTag} or throws {@link FileNotFoundException} or {@link IOException}
      */
@@ -49,12 +49,12 @@ public class McaNBTFactory {
     }
 
 
-
     /**
      * Write given {@link CompoundTag} to given {@link File}
+     *
      * @param compoundTag given {@link CompoundTag}
-     * @param file given {@link File}
-     * @param compressed determine if file is compressed or not
+     * @param file        given {@link File}
+     * @param compressed  determine if file is compressed or not
      */
     public static void saveNBT(CompoundTag compoundTag, File file, boolean compressed) {
         try {

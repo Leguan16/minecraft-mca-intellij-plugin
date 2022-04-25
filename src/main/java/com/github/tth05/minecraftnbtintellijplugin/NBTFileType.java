@@ -5,7 +5,7 @@ import com.intellij.openapi.vfs.VirtualFile;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-import javax.swing.Icon;
+import javax.swing.*;
 
 public class NBTFileType implements FileType {
 
@@ -19,6 +19,7 @@ public class NBTFileType implements FileType {
 
 	@NotNull
 	@Override
+	@SuppressWarnings({"DialogTitleCapitalization"})
 	public String getDescription() {
 		return "Named Binary Tag";
 	}

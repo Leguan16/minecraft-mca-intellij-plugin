@@ -2,7 +2,7 @@ package com.github.tth05.minecraftnbtintellijplugin;
 
 import com.intellij.openapi.util.IconLoader;
 
-import javax.swing.Icon;
+import javax.swing.*;
 import java.util.Arrays;
 import java.util.function.Function;
 

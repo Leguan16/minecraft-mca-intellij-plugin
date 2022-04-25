@@ -27,6 +27,7 @@ public class McaNBTInputStream extends DataInputStream {
 
     /**
      * Reading root {@link CompoundTag} from {@link #in} because NBT Data starts with a {@link CompoundTag}
+     *
      * @return {@link CompoundTag}
      * @throws IOException throws exception if something is wrong when reading values
      */
@@ -48,6 +49,7 @@ public class McaNBTInputStream extends DataInputStream {
 
     /**
      * Reading {@link NBTTagTreeNode}
+     *
      * @return {@link NBTTagTreeNode}
      * @throws IOException throws exception if something is wrong when reading {@link NBTTagTreeNode}
      */
@@ -78,6 +80,7 @@ public class McaNBTInputStream extends DataInputStream {
 
     /**
      * Iterate through {@link NBTType#values()} with given {@link Integer} from {@link #readByte()} method
+     *
      * @return {@link NBTType} or null
      * @throws IOException throws exception if something is wrong in {@link NBTType}
      */
@@ -87,6 +90,7 @@ public class McaNBTInputStream extends DataInputStream {
 
     /**
      * Read data from given {@link NBTType}
+     *
      * @param nbtType given {@link NBTType}
      * @return read {@link Object} of class {@link AbstractCompound} or null
      * @throws IOException throws exception if something is wrong in the read methods
@@ -125,6 +129,7 @@ public class McaNBTInputStream extends DataInputStream {
 
     /**
      * Method to read a {@link CompoundList} from {@link #in}
+     *
      * @return {@link CompoundList} filled with {@link AbstractCompound}
      * @throws IOException throws exception if something is wrong in the read methods
      */
@@ -162,8 +167,8 @@ public class McaNBTInputStream extends DataInputStream {
 
 
     /**
-     *
      * Method to read a {@link CompoundString} from {@link #in}
+     *
      * @return {@link CompoundString} with value of class {@link String}
      * @throws IOException throws exception if something is wrong in the read methods
      */
@@ -172,8 +177,8 @@ public class McaNBTInputStream extends DataInputStream {
     }
 
     /**
-     *
      * Method to read a {@link CompoundByte} from {@link #in}
+     *
      * @return {@link CompoundByte} with value of class {@link Byte}
      * @throws IOException throws exception if something is wrong in the read methods
      */
@@ -182,8 +187,8 @@ public class McaNBTInputStream extends DataInputStream {
     }
 
     /**
-     *
      * Method to read a {@link CompoundShort} from {@link #in}
+     *
      * @return {@link CompoundShort} with value of class {@link Short}
      * @throws IOException throws exception if something is wrong in the read methods
      */
@@ -192,8 +197,8 @@ public class McaNBTInputStream extends DataInputStream {
     }
 
     /**
-     *
      * Method to read a {@link CompoundInt} from {@link #in}
+     *
      * @return {@link CompoundInt} with value of class {@link Integer}
      * @throws IOException throws exception if something is wrong in the read methods
      */
@@ -202,8 +207,8 @@ public class McaNBTInputStream extends DataInputStream {
     }
 
     /**
-     *
      * Method to read a {@link CompoundLong} from {@link #in}
+     *
      * @return {@link CompoundLong} with value of class {@link Long}
      * @throws IOException throws exception if something is wrong in the read methods
      */
@@ -212,8 +217,8 @@ public class McaNBTInputStream extends DataInputStream {
     }
 
     /**
-     *
      * Method to read a {@link CompoundFloat} from {@link #in}
+     *
      * @return {@link CompoundFloat} with value of class {@link Float}
      * @throws IOException throws exception if something is wrong in the read methods
      */
@@ -222,8 +227,8 @@ public class McaNBTInputStream extends DataInputStream {
     }
 
     /**
-     *
      * Method to read a {@link CompoundDouble} from {@link #in}
+     *
      * @return {@link CompoundDouble} with value of class {@link Double}
      * @throws IOException throws exception if something is wrong in the read methods
      */
@@ -232,8 +237,8 @@ public class McaNBTInputStream extends DataInputStream {
     }
 
     /**
-     *
      * Method to read a {@link CompoundByteArray} from {@link #in}
+     *
      * @return {@link CompoundByteArray} with value of class <code>Byte[]</code>
      * @throws IOException throws exception if something is wrong in the read methods
      */
@@ -245,8 +250,8 @@ public class McaNBTInputStream extends DataInputStream {
     }
 
     /**
-     *
      * Method to read a {@link CompoundIntArray} from {@link #in}
+     *
      * @return {@link CompoundIntArray} with value of class <code>Integer[]</code>
      * @throws IOException throws exception if something is wrong in the read methods
      */
@@ -260,8 +265,8 @@ public class McaNBTInputStream extends DataInputStream {
     }
 
     /**
-     *
      * Method to read a {@link CompoundLongArray} from {@link #in}
+     *
      * @return {@link CompoundLongArray} with value of class <code>Long[]</code>
      * @throws IOException throws exception if something is wrong in the read methods
      */

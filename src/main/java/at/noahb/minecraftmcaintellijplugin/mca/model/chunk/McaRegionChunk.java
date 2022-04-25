@@ -1,8 +1,6 @@
 package at.noahb.minecraftmcaintellijplugin.mca.model.chunk;
 
 import com.github.tth05.minecraftnbtintellijplugin.NBTTagTreeNode;
-import me.ratsiel.nbt.model.CompoundTag;
-import me.ratsiel.nbt.model.values.CompoundInt;
 
 public class McaRegionChunk {
 

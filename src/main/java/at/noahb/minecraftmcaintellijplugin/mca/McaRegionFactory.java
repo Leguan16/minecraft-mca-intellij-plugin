@@ -6,11 +6,9 @@ import me.ratsiel.mca.model.RegionFile;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
-import java.util.Objects;
 
+@SuppressWarnings("DanglingJavadoc")
 public class McaRegionFactory {
 
     /**

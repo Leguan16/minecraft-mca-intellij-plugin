@@ -12,12 +12,8 @@ import com.intellij.ui.components.panels.VerticalBox;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-import javax.swing.BorderFactory;
-import javax.swing.JComponent;
-import javax.swing.JList;
-import javax.swing.JPanel;
-import java.awt.BorderLayout;
-import java.awt.Dimension;
+import javax.swing.*;
+import java.awt.*;
 
 //TODO: Fix weird bug where error makes the Name JTextField invisible
 public class CreateNewNodeDialog extends DialogWrapper {
@@ -32,7 +28,7 @@ public class CreateNewNodeDialog extends DialogWrapper {
 		setTitle("Create New");
 
 		this.comboBox = new ComboBox<>(NBTTagType.values());
-		this.comboBox.setRenderer(new SimpleListCellRenderer<NBTTagType>() {
+		this.comboBox.setRenderer(new SimpleListCellRenderer<>() {
 			@Override
 			public void customize(@NotNull JList<? extends NBTTagType> list, NBTTagType value, int index, boolean selected,
 			                      boolean hasFocus) {

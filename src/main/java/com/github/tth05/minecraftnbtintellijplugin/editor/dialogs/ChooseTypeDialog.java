@@ -10,12 +10,8 @@ import com.intellij.ui.components.JBLabel;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-import javax.swing.BorderFactory;
-import javax.swing.JComponent;
-import javax.swing.JList;
-import javax.swing.JPanel;
-import java.awt.BorderLayout;
-import java.awt.Dimension;
+import javax.swing.*;
+import java.awt.*;
 
 public class ChooseTypeDialog extends DialogWrapper {
 
@@ -27,7 +23,7 @@ public class ChooseTypeDialog extends DialogWrapper {
 
 		this.comboBox = new ComboBox<>(NBTTagType.values());
 		this.comboBox.setSelectedItem(selectedType);
-		this.comboBox.setRenderer(new SimpleListCellRenderer<NBTTagType>() {
+		this.comboBox.setRenderer(new SimpleListCellRenderer<>() {
 			@Override
 			public void customize(@NotNull JList<? extends NBTTagType> list, NBTTagType value, int index, boolean selected,
 			                      boolean hasFocus) {

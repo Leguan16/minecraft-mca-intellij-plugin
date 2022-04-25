@@ -4,7 +4,7 @@ import com.github.tth05.minecraftnbtintellijplugin.NBTTagTreeNode;
 import com.intellij.ide.util.treeView.NodeRenderer;
 import org.jetbrains.annotations.NotNull;
 
-import javax.swing.JTree;
+import javax.swing.*;
 
 public class NBTFileEditorTreeCellRenderer extends NodeRenderer {
 

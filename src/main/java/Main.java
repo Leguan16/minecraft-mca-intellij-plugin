@@ -1,6 +1,3 @@
-import at.noahb.minecraftmcaintellijplugin.util.McaFileUtil;
-import com.intellij.openapi.vfs.VirtualFile;
-
 import java.io.*;
 import java.util.zip.GZIPInputStream;
 import java.util.zip.ZipException;

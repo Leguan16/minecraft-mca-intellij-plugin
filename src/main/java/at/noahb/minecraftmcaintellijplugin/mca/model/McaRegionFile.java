@@ -7,13 +7,11 @@ import com.intellij.openapi.vfs.VirtualFile;
 import me.ratsiel.mca.enums.CompressionType;
 import me.ratsiel.mca.model.RegionFileHeader;
 import me.ratsiel.mca.model.chunk.RegionChunkLocation;
-import me.ratsiel.nbt.model.CompoundTag;
 
 import java.io.*;
 import java.nio.ByteBuffer;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 import java.util.zip.GZIPInputStream;
 import java.util.zip.InflaterInputStream;
 
@@ -29,7 +27,6 @@ public class McaRegionFile {
      * Creates a object of {@link McaRegionFile}
      *
      * @param file input of {@link File}
-     * @throws IOException if something went wrong
      */
     public McaRegionFile(VirtualFile file) {
         this.file = file;
@@ -44,7 +41,7 @@ public class McaRegionFile {
 
         String path = file.getCanonicalPath();
 
-        if(path == null) {
+        if (path == null) {
             return;
         }
 
