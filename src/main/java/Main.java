@@ -9,14 +9,15 @@ public class Main {
 
 
     public static void main(String[] args) {
-        File file = new File("C:\\Users\\longb\\IdeaProjects\\testProjectForPlugins\\test\\r.0.0.mca");
+        File file = new File("r.0.0.mca");
 
         try(DataInputStream data = uncompress(new FileInputStream(file))) {
 
             byte[] header = data.readNBytes(8000);
 
-            byte b;
-            while((b = data.readByte()) != -1) {
+            String b;
+            while(true) {
+                b = data.readUTF();
                 System.out.println(b);
             }
         } catch (IOException e) {

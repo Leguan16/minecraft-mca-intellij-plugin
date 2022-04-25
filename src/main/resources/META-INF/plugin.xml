@@ -17,6 +17,7 @@
 
         <fileType name="Minecraft Anvil" implementationClass="at.noahb.minecraftmcaintellijplugin.McaFileType"
                   fieldName="INSTANCE" extensions="mca"/>
+        <fileEditorProvider implementation="at.noahb.minecraftmcaintellijplugin.editor.McaFileEditorProvider"/>
         <fileTypeOverrider implementation="at.noahb.minecraftmcaintellijplugin.McaFileTypeOverrider"/>
     </extensions>
 
