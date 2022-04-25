@@ -1,7 +1,10 @@
 <idea-plugin>
-    <id>com.github.tth05.minecraft-nbt-intellij-plugin</id>
-    <name>Minecraft NBT Support</name>
-    <vendor>tth05</vendor>
+    <id>at.noahb.minecraft-nbt-intellij-plugin</id>
+    <name>Minecraft MCA Support</name>
+    <vendor>
+        - Leguan
+        - tth05
+    </vendor>
 
     <description><![CDATA[<p>Provides a proper way of editing Minecraft region files (mca) in Intellij.
     Similar to the program NBT-Explorer</p>]]></description>
