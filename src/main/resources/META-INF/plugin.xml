@@ -1,0 +1,36 @@
+<idea-plugin>
+    <id>com.github.tth05.minecraft-nbt-intellij-plugin</id>
+    <name>Minecraft NBT Support</name>
+    <vendor>tth05</vendor>
+
+    <description><![CDATA[<p>Provides a proper way of editing Minecraft region files (mca) in Intellij.
+    Similar to the program NBT-Explorer</p>]]></description>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <fileType name="Minecraft NBT" implementationClass="com.github.tth05.minecraftnbtintellijplugin.NBTFileType"
+                  fieldName="INSTANCE" extensions="nbt"/>
+        <fileEditorProvider implementation="com.github.tth05.minecraftnbtintellijplugin.editor.NBTFileEditorProvider"/>
+        <fileTypeOverrider implementation="com.github.tth05.minecraftnbtintellijplugin.NBTFileTypeOverrider"/>
+
+
+        <fileType name="Minecraft Anvil" implementationClass="at.noahb.minecraftmcaintellijplugin.McaFileType"
+                  fieldName="INSTANCE" extensions="mca"/>
+        <fileTypeOverrider implementation="at.noahb.minecraftmcaintellijplugin.McaFileTypeOverrider"/>
+    </extensions>
+
+    <actions>
+        <action id="com.github.tth05.minecraftnbtintellijplugin.actions.RenameAction"
+                class="com.github.tth05.minecraftnbtintellijplugin.actions.RenameAction"/>
+        <action id="com.github.tth05.minecraftnbtintellijplugin.actions.CreateNBTFileAction"
+                class="com.github.tth05.minecraftnbtintellijplugin.actions.CreateNBTFileAction" text="NBT File"
+                description="Create a new NBT file">
+            <add-to-group group-id="NewGroup" anchor="before" relative-to-action="NewFromTemplate"/>
+        </action>
+        <group id="com.github.tth05.minecraftnbtintellijplugin.actions.NBTFileEditorPopupGroup"
+               class="com.github.tth05.minecraftnbtintellijplugin.actions.NBTFileEditorPopupGroup"
+               popup="true">
+        </group>
+    </actions>
+</idea-plugin>
